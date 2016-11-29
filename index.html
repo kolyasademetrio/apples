@@ -7,11 +7,15 @@
     <title></title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <!-- flexslider -->
     <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css"/>
     <!-- magnific-popup -->
     <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.7/css/bootstrap-select.css">
+
+
     <!-- fonts css -->
     <link rel="stylesheet" href="css/fonts.css">
     <!-- custom css -->
@@ -36,7 +40,13 @@
                     
                     <p class="headerTop__text">Сеть сервисных центров<br>по ремонту техники Apple</p>
 
-                    <div class="headerTop__address">address</div>
+                    <div class="headerTop__address">
+                        <select id="touchpoint-filter" class="selectpicker filter">
+                            <option><i class="icon metro1" style="width:15px;height:15px;background:#369;"></i>Озерки-Просвещение</option>
+                            <option><i class="icon metro2" style="width:15px;height:15px;background:#369;"></i>Сенная/Спасская/Садовая</option>
+                            <option><i class="icon metro3" style="width:15px;height:15px;background:#369;"></i>Лесная</option>
+                        </select>
+                    </div>
                 
                 </div>
             </div>
@@ -49,18 +59,69 @@
                 <div class="col-xs-12 headerNav__innerItem">
                     <nav class="headerNav__navigation">
                         <ul class="headerNav__list">
-                            <li><a href="#">iPad</a></li>
-                            <li><a href="#">iPhone</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">Ноутбуки</a></li>
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">Статьи</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li>
+                                <a href="#" class="menuBtn">iPad</a>
+                                <ul class="headerNav__sublist">
+                                    <li><a href="#">iPad</a></li>
+                                    <li><a href="#">iPad 2</a></li>
+                                    <li><a href="#">iPad 3</a></li>
+                                    <li><a href="#">iPad 4</a></li>
+                                    <li><a href="#">iPad 5 (Air)</a></li>
+                                    <li><a href="#">iPad mini</a></li>
+                                    <li><a href="#">iPad mini 2</a></li>
+                                    <li><a href="#">iPad mini 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menuBtn">iPhone</a>
+                                <ul class="headerNav__sublist">
+                                    <li><a href="#">iPhone 3G</a></li>
+                                    <li><a href="#">iPhone 4</a></li>
+                                    <li><a href="#">iPhone 4S</a></li>
+                                    <li><a href="#">iPhone 5</a></li>
+                                    <li><a href="#">iPhone 5C</a></li>
+                                    <li><a href="#">iPhone 5S</a></li>
+                                    <li><a href="#">iPhone 6</a></li>
+                                    <li><a href="#">iPhone 6 Plus</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menuBtn">Mac</a>
+                                <ul class="headerNav__sublist">
+                                    <li><a href="#">MacBook Air</a></li>
+                                    <li><a href="#">MacBook Pro</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Ноутбуки</a>
+                            </li>
+                            <li>
+                                <a href="#">Акции</a>
+                            </li>
+                            <li>
+                                <a href="#">Статьи</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
                         </ul>
                     </nav>
 
                     <div class="headerNav__btnWrap">
-                        <a href="#" class="headerNav__orderButton"></a>
+                        <a href="#popup2" class="headerNav__orderButton">Оставить заявку</a>
+                        <div id="popup2" class="popup mfp-hide">
+                            <form action="send1.php" method="post">
+                                <div class="popup__header">
+                                    <div class="popup__title">БЕСПЛАТНАЯ ДИАГНОСТИКА</div>
+                                    <div class="popup__info">Оставьте заявку и получите скидку 5%</div>
+                                </div>
+                                <div class="popup__footer">
+                                    <input type="text" name="name" class="popup__inputText" placeholder="Введите имя">
+                                    <input type="text" name="phone" class="popup__inputText" placeholder="Введите телефон">
+                                    <input type="submit" value="Оставить заявку" class="popup__inputSubmit">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,8 +139,14 @@
     <script type="text/javascript" src="plugins/flexslider/jquery.flexslider-min.js"></script>
     <!-- popup JS -->
     <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+
+
     <!-- custom js -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     <!-- initializations -->
     <script type="text/javascript" src="js/init.js"></script>
 

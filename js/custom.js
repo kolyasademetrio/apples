@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+	/*--------------------------------- функция для меню -----------------------------*/
+
+	(function(){
+		var $menuBtn = $('.menuBtn');
+		$menuBtn.on('click', function(e){
+			e.preventDefault();
+			$('.headerNav__sublist').not($(this).next()).slideUp();
+			$(this).next('.headerNav__sublist').slideToggle();
+		});
+	})();
+
+	/*--------------------------------- функция для меню Конец -----------------------*/
+
+
+
 	/*--------------------------------- функция для адаптивного меню -----------------------------*/
 
 		function menuAdapt(menuBtn, menu, header) {

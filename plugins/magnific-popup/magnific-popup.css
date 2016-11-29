@@ -357,12 +357,12 @@ img.mfp-img {
 .popup_inline .popup {
   width: 300px;
   height: auto;
-  background: #369;
+  background: #ededed;
 
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 
   left: 50%;
   margin-left: -150px;
@@ -378,10 +378,13 @@ img.mfp-img {
 }
 
 .popup__header {
-  padding: 20px;
+  padding: 18px;
   text-align: center;
-  color: #fff;
+  color: #141414;
   font-size: 16px;
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
 }
 
 .popup__title {
@@ -390,15 +393,19 @@ img.mfp-img {
   margin: 0 0 10px;
 }
 
+.popup__info {
+  font-size: 14px;
+}
+
 .popup__footer {
-  padding: 20px 20px 20px 20px;
+  padding: 18px;
 }
 
 .popup__inputText {
   height: 40px;
   line-height: 40px;
   background: #fff;
-  border: 0 none;
+  border: 1px solid #959595;
   outline: none;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -407,7 +414,9 @@ img.mfp-img {
   margin: 0 0 10px;
   width: 100%;
   display: block;
-  text-align: center;
+  text-align: left;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .popup__inputSubmit {
@@ -422,7 +431,7 @@ img.mfp-img {
   width: 100%;
   display: block;
   text-align: center;
-  background: #274075;
+  background: #4a4a4a;
   color: #fff;
 
   -webkit-transition: all .6s ease 0s;
@@ -436,20 +445,16 @@ img.mfp-img {
 }
 
 .popup_inline .mfp-close {
-  height: 50px;
-  width: 50px;
-  line-height: 40px;
-  background: #369;
-  border: 3px solid #fff;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
   opacity: 1;
-  margin-top: -65px;
-  margin-right: -65px;
+  margin-top: -32px;
+  margin-right: -27px;
   padding: 0;
   color: #fff;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
 }
 

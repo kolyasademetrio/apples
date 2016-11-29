@@ -91,18 +91,19 @@ h1, h2, h3, h4, h5, h6, p {
 	float: left;
 }
 
-.headerNav__navigation li {
+.headerNav__list>li {
 	float: left;
+	position: relative;
 }
 
-.headerNav__list li>a {
-	float: left;
+.headerNav__list>li>a {
 	display: block;
-	padding: 16px 14px;
+	padding: 16px 14px 13px 14px;
 	font-family: "RobotoRegular";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 19px;
+	line-height: 19px;
 	color: #fff;
 	border-bottom: 3px solid transparent;
 	position: relative;
@@ -113,16 +114,16 @@ h1, h2, h3, h4, h5, h6, p {
 	transition: all .6s ease 0s;
 }
 
-.headerNav__list li>a:hover {
+.headerNav__list>li>a:hover {
 	background: rgba(255, 255, 255, .15);
 	border-bottom-color: rgba(255, 255, 255, .85);
 }
 
-.headerNav__list li>a.active {
+.headerNav__list>li>a.active {
 	border-bottom-color: #fff;
 }
 
-.headerNav__list li>a:after {
+.headerNav__list>li>a:after {
 	content: '';
 	position: absolute;
 	border: 3px solid transparent;
@@ -137,11 +138,11 @@ h1, h2, h3, h4, h5, h6, p {
 	transition: all .6s ease 0s;
 }
 
-.headerNav__list li>a:hover:after {
+.headerNav__list>li>a:hover:after {
 	border-bottom-color: rgba(255, 255, 255, .85);
 }
 
-.headerNav__list li>a.active:after {
+.headerNav__list>li>a.active:after {
 	border-bottom-color: #fff;
 }
 
@@ -157,10 +158,288 @@ h1, h2, h3, h4, h5, h6, p {
 	padding-right: 23px;
 }
 
-.headerNav__btnWrap {
-	float: right;
+.headerNav__sublist {
+	position: absolute;
+	top: 100%;
+	background: #e9e9e9;
+	left: 0;
+	z-index: 999;
+
+	border-bottom: 1px solid #f2f2f2;
+	width: 200px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	display: none;
 }
 
+.headerNav__sublist li {
+	display: block !important;
+	float: none !important;
+	width: 100%;
+}
+
+.headerNav__sublist a {
+	padding: 6px 20px !important;
+	display: block !important;
+	box-shadow: 0 -2px 0 -1px #d9d9d9 inset !important;
+	color: #000 !important;
+
+	-webkit-transition: all .6s ease 0s;
+	-moz-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+	transition: all .6s ease 0s;
+}
+
+.headerNav__sublist>li:last-child a {
+	border: 0 none;
+	box-shadow: none !important;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+.headerNav__sublist a:hover {
+	background: #fff;
+}
+
+
+
+.headerNav__btnWrap {
+	float: right;
+	text-align: center;
+	padding: 10px 0 0;
+}
+
+.headerNav__orderButton {
+	display: inline-block;
+	width: 181px;
+	height: 31px;
+	line-height: 31px;
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	background: #fffc00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border-bottom: 3px solid #ffcc00;
+}
+
+.headerNav__orderButton:hover,
+.headerNav__orderButton:focus {
+	color: #000;
+}
+
+/* ----- selectpicker ----------*/
+select {
+ 
+  padding: 10px !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.bootstrap-select .btn-default {
+  color: #828A99;
+  // border-color: #828A99;
+  background-color: #F1F1F1;
+  border-radius: 3px;
+}
+
+.bootstrap-select.open .btn-default,
+.bootstrap-select.open .btn-default:hover {
+  color: #000;
+  // border-color: #828A99;
+  background-color: #FFF;
+  border-radius: 3px;
+
+}
+
+.bootstrap-select .dropdown-menu {
+	border-top: 0 none;
+	margin-top: 0;
+	-moz-border-radius: 0 0 3px 0 !important;
+	-webkit-border-radius: 0 0 3px 0 !important;
+	-o-border-radius: 0 0 3px 0 !important;
+	border-radius: 0 0 3px 0 !important;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.bootstrap-select .btn-default:focus {
+    outline: none !important;
+}
+
+.bootstrap-select .dropdown-menu li a {
+    color: #828A99;
+    padding: 8px 10px;
+}
+
+.bootstrap-select .dropdown-menu li.selected a {
+    background: #F5F5F5;
+    color: #000;
+}
+
+.bootstrap-select .dropdown-menu li a:hover {
+    color: #000;
+    background: #F5F5F5;
+}
+
+.bootstrap-select .dropdown-menu li a:active {
+    color: #000;
+    background: #F5F5F5;
+}
+
+.bootstrap-select .btn-default:active {
+    color: #000;
+    background: #F5F5F5;
+}
+
+.bootstrap-select a:focus {
+  outline: none !important;
+}
+
+
+.selectpicker .icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 7px;
+	margin-right: 10px;
+}
+
+.selectpicker .icon.metro1 {
+	background: url(../img/icons/1.png) no-repeat left top;
+}
+
+.selectpicker .icon.metro2 {
+	background: url(../img/icons/2.png) no-repeat left top;
+}
+
+.selectpicker .icon.metro3 {
+	background: url(../img/icons/3.png) no-repeat left top;
+}
+
+
+
+.dropdown-menu.open .text:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #000;
+	height: 18px;
+	width: 18px;
+	top: 50%;
+	margin-top: -9px;
+	left: 16px;
+}
+
+.bootstrap-select .dropdown-menu li a {
+	padding-left: 55px;
+}
+
+.bootstrap-select .dropdown-menu li:nth-child(1) .text:after {
+	background: url(../img/icons/1.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.bootstrap-select .dropdown-menu li:nth-child(2) .text:after {
+	background: url(../img/icons/2.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.bootstrap-select .dropdown-menu li:nth-child(3) .text:after {
+	background: url(../img/icons/3.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn.dropdown-toggle.btn-default {
+	padding-left: 55px;
+	-moz-border-radius: 0 3px 0 0 !important;
+	-webkit-border-radius: 0 3px 0 0 !important;
+	-o-border-radius: 0 3px 0 0 !important;
+	border-radius: 0 3px 0 0 !important;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 245px;
+	outline: none;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn):focus {
+	outline: none;
+}
+
+.btn.dropdown-toggle.btn-default:focus {
+	outline: none;
+}
+
+.btn.dropdown-toggle.btn-default:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #000;
+	height: 18px;
+	width: 18px;
+	top: 50%;
+	margin-top: -9px;
+	left: 16px;
+}
+
+.btn.dropdown-toggle.btn-default[title="Озерки-Просвещение"]:after {
+	background: url(../img/icons/1.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn.dropdown-toggle.btn-default[title="Сенная/Спасская/Садовая"]:after {
+	background: url(../img/icons/2.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn.dropdown-toggle.btn-default[title="Лесная"]:after {
+	background: url(../img/icons/3.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn-group.open .dropdown-toggle {
+	box-shadow: none;
+}
+
+.btn.dropdown-toggle.btn-default {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.btn-default.active, .btn-default:active,
+.open > .dropdown-toggle.btn-default,
+.dropdown-menu {
+	border-color: #ccc;
+}
+
+.btn-default {
+	border-color: #ccc !important;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .bs-caret {
+    background-color: #e3e3e3;
+    border: medium none;
+    border-radius: 0 3px 0 0;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+/* -- selectpicker End -- */
 
 /* ------------------------>>> headerNav End <<<---------------------------------------------- */
 
