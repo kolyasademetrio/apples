@@ -61,12 +61,373 @@ h1, h2, h3, h4, h5, h6, p {
 	color: #0a0a0a;
 	float: left;
 	width: 235px;
-	margin: 0 0 0 98px;
+	margin: 0 0 0 43px;
 	padding: 29px 0 0;
 }
 
 .headerTop__address {
 	float: right;
+	background: url(../img/bg-pattern--diagonal-gray.png) left top;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	-o-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	border: 1px solid #dadada;
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.19);
+	margin-top: 14px;
+}
+
+.services__address-footer:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.services__address-text {
+	float: left;
+    font-size: 15px;
+    padding: 5px 10px 6px;
+    text-align: right;
+}
+
+.services__address-text .glyphicon.glyphicon-map-marker {
+	font-size: 25px;
+	position: relative;
+	top: 7px;
+}
+
+.services__address-phone {
+	float: left;
+	font-size: 19px;
+    padding: 5px 15px;
+    width: 245px;
+}
+
+.services__address-phone>i {
+	padding: 4px;
+	background: #000;
+	display: inline-block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	height: 24px;
+	width: 24px;
+	position: relative;
+	top: 5px;
+}
+
+.services__address-phone .glyphicon.glyphicon-earphone {
+	color: #fff;
+	position: relative;
+	top: -5px;
+	left: 1px;
+	font-size: 14px;
+}
+
+.services__address-phone span {
+	display: inline-block;
+	text-align: right;
+	width: 181px;
+}
+
+
+/* ----- selectpicker ----------*/
+.headerTop__address-select {
+	float: right;
+}
+
+select {
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+
+.bootstrap-select .btn-default {
+  color: #828A99;
+  background-color: #F1F1F1;
+  border-radius: 3px;
+}
+
+.bootstrap-select.open .btn-default,
+.bootstrap-select.open .btn-default:hover {
+  color: #000;
+  background-color: #FFF;
+  border-radius: 3px;
+
+}
+
+.bootstrap-select .dropdown-menu {
+	border-top: 0 none;
+	margin-top: 0;
+	-moz-border-radius: 0 0 3px 0 !important;
+	-webkit-border-radius: 0 0 3px 0 !important;
+	-o-border-radius: 0 0 3px 0 !important;
+	border-radius: 0 0 3px 0 !important;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.bootstrap-select .btn-default:focus {
+    outline: none !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.27) !important;
+}
+
+.bootstrap-select .dropdown-menu li a {
+    color: #828A99;
+    padding: 8px 10px;
+}
+
+.bootstrap-select .dropdown-menu li.selected a {
+    background: #F5F5F5;
+    color: #000;
+}
+
+.bootstrap-select .dropdown-menu li a:hover {
+    color: #000;
+    background: #F5F5F5;
+}
+
+.bootstrap-select .dropdown-menu li a:active {
+    color: #000;
+    background: #F5F5F5;
+}
+
+.bootstrap-select .btn-default:active {
+    color: #000;
+    background: #F5F5F5;
+}
+
+.bootstrap-select a:focus {
+  outline: none !important;
+}
+
+
+.selectpicker .icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 7px;
+	margin-right: 10px;
+}
+
+.selectpicker .icon.metro1 {
+	background: url(../img/icons/1.png) no-repeat left top;
+}
+
+.selectpicker .icon.metro2 {
+	background: url(../img/icons/2.png) no-repeat left top;
+}
+
+.selectpicker .icon.metro3 {
+	background: url(../img/icons/3.png) no-repeat left top;
+}
+
+.dropdown-menu.open .text:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #000;
+	height: 18px;
+	width: 18px;
+	top: 50%;
+	margin-top: -9px;
+	left: 16px;
+}
+
+.bootstrap-select .dropdown-menu li a {
+	padding-left: 55px;
+}
+
+.bootstrap-select .dropdown-menu li:nth-child(1) .text:after {
+	background: url(../img/icons/1.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.bootstrap-select .dropdown-menu li:nth-child(2) .text:after {
+	background: url(../img/icons/2.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.bootstrap-select .dropdown-menu li:nth-child(3) .text:after {
+	background: url(../img/icons/3.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn.dropdown-toggle.btn-default {
+	padding-left: 55px;
+	-moz-border-radius: 0 3px 0 0 !important;
+	-webkit-border-radius: 0 3px 0 0 !important;
+	-o-border-radius: 0 3px 0 0 !important;
+	border-radius: 0 3px 0 0 !important;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 245px;
+	outline: none;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn):focus {
+	outline: none;
+}
+
+.btn.dropdown-toggle.btn-default:focus {
+	outline: none;
+}
+
+.btn.dropdown-toggle.btn-default:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #000;
+	height: 18px;
+	width: 18px;
+	top: 50%;
+	margin-top: -9px;
+	left: 16px;
+}
+
+.btn.dropdown-toggle.btn-default[title="Озерки-Просвещение"]:after {
+	background: url(../img/icons/1.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn.dropdown-toggle.btn-default[title="Сенная/Спасская/Садовая"]:after {
+	background: url(../img/icons/2.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn.dropdown-toggle.btn-default[title="Лесная"]:after {
+	background: url(../img/icons/3.png) no-repeat left top;
+	background-size: 18px 18px;
+}
+
+.btn-group.open .dropdown-toggle {
+	box-shadow: none;
+}
+
+.btn.dropdown-toggle.btn-default {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.btn-default.active, .btn-default:active,
+.open > .dropdown-toggle.btn-default,
+.dropdown-menu {
+	border-color: #ccc;
+}
+
+.btn-default {
+	border-color: #ccc !important;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .bs-caret {
+    background-color: #e3e3e3;
+    border: medium none;
+    border-radius: 0 3px 0 0;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+/* -- selectpicker End -- */
+
+.services__address-title {
+	float: right;
+	font-size: 13px;
+    padding: 5px 6px 6px 12px;
+    text-align: right;
+}
+
+@media ( max-width: 992px ) {
+
+	.headerTop__logoWrap {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.headerTop__address {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+	}
+
+}
+
+@media ( max-width: 650px ) {
+
+	.headerTop__address {
+		width: 100%;
+		display: block;
+	}
+
+	.services__address-text {
+		float: none;
+		text-align: center;
+	}
+
+	.services__address-phone {
+		width: auto;
+		text-align: center;
+		float: none;
+	}
+
+	.headerTop__addressWrapper:after {
+		display: table;
+		content: "";
+		clear: both;
+	}
+
+	.headerTop__addressWrapper {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media ( max-width: 500px ) {
+
+	.headerTop__addressWrapper {
+		position: relative;
+		padding-top: 30px;
+	}
+
+	.services__address-title {
+		position: absolute;
+		top: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width: 320px;
+	}
+
+	.headerTop__link {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+
+	.headerTop__text {
+		margin-left: 0;
+	}
+
+}
+
+@media ( max-width: 350px ) {
+
+	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width: 260px;
+	}
+
 }
 /* ------------------------>>> header End <<<------------------------------------------------- */
 
@@ -206,12 +567,10 @@ h1, h2, h3, h4, h5, h6, p {
 	background: #fff;
 }
 
-
-
 .headerNav__btnWrap {
 	float: right;
 	text-align: center;
-	padding: 10px 0 0;
+	padding: 10px 15px 0 0;
 }
 
 .headerNav__orderButton {
@@ -231,215 +590,112 @@ h1, h2, h3, h4, h5, h6, p {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	border-bottom: 3px solid #ffcc00;
+
+	-webkit-transition: all .6s ease 0s;
+	-moz-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+	transition: all .6s ease 0s;
 }
 
 .headerNav__orderButton:hover,
 .headerNav__orderButton:focus {
 	color: #000;
+	text-decoration: none;
 }
 
-/* ----- selectpicker ----------*/
-select {
- 
-  padding: 10px !important;
-  margin: 0 0 20px 0 !important;
+.headerNav__orderButton:hover {
+	background: #ffcc00;
 }
 
-.bootstrap-select .btn-default {
-  color: #828A99;
-  // border-color: #828A99;
-  background-color: #F1F1F1;
-  border-radius: 3px;
-}
+@media ( max-width: 1200px ) {
 
-.bootstrap-select.open .btn-default,
-.bootstrap-select.open .btn-default:hover {
-  color: #000;
-  // border-color: #828A99;
-  background-color: #FFF;
-  border-radius: 3px;
+	.headerNav__btnWrap {
+		padding-right: 0;
+	}
 
 }
 
-.bootstrap-select .dropdown-menu {
-	border-top: 0 none;
-	margin-top: 0;
-	-moz-border-radius: 0 0 3px 0 !important;
-	-webkit-border-radius: 0 0 3px 0 !important;
-	-o-border-radius: 0 0 3px 0 !important;
-	border-radius: 0 0 3px 0 !important;
-	background-color: #fff;
-	border-radius: 3px;
+@media ( max-width: 992px ) {
+
+	.headerNav__list > li > a {
+		font-size: 15px;
+		padding: 16px 10px 13px;
+	}
+
 }
 
-.bootstrap-select .btn-default:focus {
-    outline: none !important;
+@media ( max-width: 768px ) {
+
+	.headerNav__innerItem .glyphicon.glyphicon-menu-hamburger {
+		top: 11px;
+		font-size: 27px;
+		color: #fff;
+		background: #434343;
+
+		-webkit-transition: all .6s ease 0s;
+		-moz-transition: all .6s ease 0s;
+		-o-transition: all .6s ease 0s;
+		transition: all .6s ease 0s;
+	}
+
+	.headerNav__innerItem .glyphicon.glyphicon-menu-hamburger:hover {
+		cursor: pointer;
+		font-size: 29px;
+	}
+
+	.headerNav__navigation {
+		position: fixed;
+		top: 0;
+		width: 220px;
+		right: -220px;
+		bottom: 0;
+		background: rgba(0, 0, 0, .9);
+
+		-webkit-transition: all .6s ease 0s;
+		-moz-transition: all .6s ease 0s;
+		-o-transition: all .6s ease 0s;
+		transition: all .6s ease 0s;
+	}
+
+	.headerNav__navigation.right_0 {
+		right: 0;
+	}
+
+
+	.headerNav__btnWrap {
+		padding-bottom: 10px;
+	}
+
+	.headerNav__list {
+		// background: #000;
+	}
+
+	.headerNav__list > li {
+		float: none;
+	}
+
+	.headerNav__list > li > a {
+		padding-left: 25px;
+		padding-right: 10px;
+	}
+
+	.headerNav__list>li>a:hover {
+		border-bottom: none;
+		border-left: 3px solid rgba(255, 255, 255, 85);
+	}
+
+	.headerNav__list>li>a:after {
+		border: 3px solid transparent !important;
+		top: 50%;
+		left: 0;
+		margin-left: 0;
+		bottom: auto;
+	}
+
+	.headerNav__list>li>a:hover:after {
+		border-left-color: rgba(255, 255, 255, .85) !important;
+	}
 }
-
-.bootstrap-select .dropdown-menu li a {
-    color: #828A99;
-    padding: 8px 10px;
-}
-
-.bootstrap-select .dropdown-menu li.selected a {
-    background: #F5F5F5;
-    color: #000;
-}
-
-.bootstrap-select .dropdown-menu li a:hover {
-    color: #000;
-    background: #F5F5F5;
-}
-
-.bootstrap-select .dropdown-menu li a:active {
-    color: #000;
-    background: #F5F5F5;
-}
-
-.bootstrap-select .btn-default:active {
-    color: #000;
-    background: #F5F5F5;
-}
-
-.bootstrap-select a:focus {
-  outline: none !important;
-}
-
-
-.selectpicker .icon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	position: relative;
-	top: 7px;
-	margin-right: 10px;
-}
-
-.selectpicker .icon.metro1 {
-	background: url(../img/icons/1.png) no-repeat left top;
-}
-
-.selectpicker .icon.metro2 {
-	background: url(../img/icons/2.png) no-repeat left top;
-}
-
-.selectpicker .icon.metro3 {
-	background: url(../img/icons/3.png) no-repeat left top;
-}
-
-
-
-.dropdown-menu.open .text:after {
-	content: "";
-	display: block;
-	position: absolute;
-	background: #000;
-	height: 18px;
-	width: 18px;
-	top: 50%;
-	margin-top: -9px;
-	left: 16px;
-}
-
-.bootstrap-select .dropdown-menu li a {
-	padding-left: 55px;
-}
-
-.bootstrap-select .dropdown-menu li:nth-child(1) .text:after {
-	background: url(../img/icons/1.png) no-repeat left top;
-	background-size: 18px 18px;
-}
-
-.bootstrap-select .dropdown-menu li:nth-child(2) .text:after {
-	background: url(../img/icons/2.png) no-repeat left top;
-	background-size: 18px 18px;
-}
-
-.bootstrap-select .dropdown-menu li:nth-child(3) .text:after {
-	background: url(../img/icons/3.png) no-repeat left top;
-	background-size: 18px 18px;
-}
-
-.btn.dropdown-toggle.btn-default {
-	padding-left: 55px;
-	-moz-border-radius: 0 3px 0 0 !important;
-	-webkit-border-radius: 0 3px 0 0 !important;
-	-o-border-radius: 0 3px 0 0 !important;
-	border-radius: 0 3px 0 0 !important;
-}
-
-.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-	width: 245px;
-	outline: none;
-}
-
-.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn):focus {
-	outline: none;
-}
-
-.btn.dropdown-toggle.btn-default:focus {
-	outline: none;
-}
-
-.btn.dropdown-toggle.btn-default:after {
-	content: "";
-	display: block;
-	position: absolute;
-	background: #000;
-	height: 18px;
-	width: 18px;
-	top: 50%;
-	margin-top: -9px;
-	left: 16px;
-}
-
-.btn.dropdown-toggle.btn-default[title="Озерки-Просвещение"]:after {
-	background: url(../img/icons/1.png) no-repeat left top;
-	background-size: 18px 18px;
-}
-
-.btn.dropdown-toggle.btn-default[title="Сенная/Спасская/Садовая"]:after {
-	background: url(../img/icons/2.png) no-repeat left top;
-	background-size: 18px 18px;
-}
-
-.btn.dropdown-toggle.btn-default[title="Лесная"]:after {
-	background: url(../img/icons/3.png) no-repeat left top;
-	background-size: 18px 18px;
-}
-
-.btn-group.open .dropdown-toggle {
-	box-shadow: none;
-}
-
-.btn.dropdown-toggle.btn-default {
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
-
-.btn-default.active, .btn-default:active,
-.open > .dropdown-toggle.btn-default,
-.dropdown-menu {
-	border-color: #ccc;
-}
-
-.btn-default {
-	border-color: #ccc !important;
-}
-
-.bootstrap-select.btn-group .dropdown-toggle .bs-caret {
-    background-color: #e3e3e3;
-    border: medium none;
-    border-radius: 0 3px 0 0;
-    bottom: 0;
-    display: block;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30px;
-}
-/* -- selectpicker End -- */
 
 /* ------------------------>>> headerNav End <<<---------------------------------------------- */
 

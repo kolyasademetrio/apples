@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 	/*--------------------------------- функция для меню -----------------------------*/
-
 	(function(){
 		var $menuBtn = $('.menuBtn');
 		$menuBtn.on('click', function(e){
@@ -10,37 +9,55 @@ $(document).ready(function(){
 			$(this).next('.headerNav__sublist').slideToggle();
 		});
 	})();
-
 	/*--------------------------------- функция для меню Конец -----------------------*/
 
+
+	/*--------------------------------- функция для select/option -----------------------------*/
+	(function(){
+		var $services_address_text = $('.services__address-text>span'),
+			$services_address_phone = $('.services__address-phone>span'),
+			phoneArr = [
+							'+7 (812) 900-76-64',
+							'+7 (812) 956-98-71',
+							'+7 (812) 906-04-17'
+						],
+			value = $('#touchpoint-filter').val();
+
+		if (value == 'Озерки-Просвещение') {
+			$services_address_text.html('ул. Композиторов 4.<br/> помещение 245');
+			$services_address_phone.html('<a href="tel:' + phoneArr[0] + '">' + phoneArr[0] + '<a/>');
+		} else if (value == 'Сенная/Спасская/Садовая') {
+			$services_address_text.html('ул.Гороховая 45 (во Дворе)');
+			$services_address_phone.html('<a href="tel:' + phoneArr[1] + '">' + phoneArr[1] + '<a/>');
+		} else if (value == 'Лесная') {
+			$services_address_text.html('Лесной проспект д.61к1');
+			$services_address_phone.html('<a href="tel:' + phoneArr[2] + '">' + phoneArr[2] + '<a/>');
+		}
+
+		$('#touchpoint-filter').on('hidden.bs.select', function (e) {
+			var value = $('#touchpoint-filter').val();
+			if (value == 'Озерки-Просвещение') {
+				$services_address_text.html('ул. Композиторов 4.<br/> помещение 245');
+				$services_address_phone.html('<a href="tel:' + phoneArr[0] + '">' + phoneArr[0] + '<a/>');
+			} else if (value == 'Сенная/Спасская/Садовая') {
+				$services_address_text.html('ул.Гороховая 45 (во Дворе)');
+				$services_address_phone.html('<a href="tel:' + phoneArr[1] + '">' + phoneArr[1] + '<a/>');
+			} else if (value == 'Лесная') {
+				$services_address_text.html('Лесной проспект д.61к1');
+				$services_address_phone.html('<a href="tel:' + phoneArr[2] + '">' + phoneArr[2] + '<a/>');
+			}
+		});
+	})();
+	/*--------------------------------- функция для select/option Конец -----------------------*/
 
 
 	/*--------------------------------- функция для адаптивного меню -----------------------------*/
 
-		function menuAdapt(menuBtn, menu, header) {
-
-			var $menuBtn = menuBtn,
-				$menu = menu,
-				$header = header,
-				menuHeight;
-
-			$menuBtn.on('click', function(){
-				menuHeight = $header.height();
-				$menu.css('top', menuHeight);
-				$menu.slideToggle();
+		(function(){
+			$('.headerNav__innerItem .glyphicon.glyphicon-menu-hamburger').on('click', function(){
+				$('.headerNav__navigation').toggleClass('right_0');
 			});
-
-			$(window).resize(function(){
-				if (window.matchMedia('(max-width: 768px)').matches && $($menu).is(':visible')) {
-					$($menu).hide();
-				} else if (window.matchMedia('(min-width: 768px)').matches) {
-					$($menu).show();
-				}
-			});
-
-		}
-
-		// menuAdapt($('.header .glyphicon.glyphicon-menu-hamburger'), $('.header__navList'), $('.header'));
+		})();
 	
 	/*--------------------------------- функция для адаптивного меню End -------------------------*/
 

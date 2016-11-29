@@ -34,18 +34,37 @@
         <div class="container headerTop__container">
             <div class="row headerTop__row">
                 <div class="col-xs-12 headerTop__itemInner">
-                    <a href="#" class="headerTop__link">
-                        <img src="img/logo--black.png" alt="logo" class="headerTop__img">
-                    </a>
-                    
-                    <p class="headerTop__text">Сеть сервисных центров<br>по ремонту техники Apple</p>
+                    <div class="headerTop__logoWrap">
+                        <a href="#" class="headerTop__link">
+                            <img src="img/logo--black.png" alt="logo" class="headerTop__img">
+                        </a>
+                        
+                        <p class="headerTop__text">Сеть сервисных центров<br>по ремонту техники Apple</p>
+                    </div>
 
                     <div class="headerTop__address">
-                        <select id="touchpoint-filter" class="selectpicker filter">
-                            <option><i class="icon metro1" style="width:15px;height:15px;background:#369;"></i>Озерки-Просвещение</option>
-                            <option><i class="icon metro2" style="width:15px;height:15px;background:#369;"></i>Сенная/Спасская/Садовая</option>
-                            <option><i class="icon metro3" style="width:15px;height:15px;background:#369;"></i>Лесная</option>
-                        </select>
+                        <div class="headerTop__addressWrapper">
+                            <div class="headerTop__address-select">
+                                <select id="touchpoint-filter" class="selectpicker filter">
+                                    <option>Озерки-Просвещение</option>
+                                    <option>Сенная/Спасская/Садовая</option>
+                                    <option>Лесная</option>
+                                </select>
+                            </div>
+                            
+                            <div class="services__address-title">Выберите ближайший к вам центр:</div>
+                        </div>
+
+                        <div class="services__address-footer">
+                            <div class="services__address-text">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                                <span></span>
+                            </div>
+                            <div class="services__address-phone">
+                                <i><i class="glyphicon glyphicon-earphone"></i></i>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 
                 </div>
@@ -57,6 +76,7 @@
         <div class="container headerNav__container">
             <div class="row headerNav__row">
                 <div class="col-xs-12 headerNav__innerItem">
+                    <i class="glyphicon glyphicon-menu-hamburger"></i>
                     <nav class="headerNav__navigation">
                         <ul class="headerNav__list">
                             <li>
