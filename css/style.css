@@ -1077,6 +1077,24 @@ select {
 	margin: 0 0 20px;
 }
 
+@media ( max-width: 768px ) {
+
+	.intro {
+		padding: 40px 0 10px;
+	}
+
+	.intro__title {
+		font-size: 18px;
+		margin: 0 0 40px;
+	}
+
+	.intro__content p {
+		font-size: 15px;
+		line-height: 19px;
+	}
+
+}
+
 
 
 
