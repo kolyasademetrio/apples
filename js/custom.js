@@ -16,35 +16,48 @@ $(document).ready(function(){
 	(function(){
 		var $services_address_text = $('.services__address-text>span'),
 			$services_address_phone = $('.services__address-phone>span'),
-			phoneArr = [
-							'+7 (812) 900-76-64',
-							'+7 (812) 956-98-71',
-							'+7 (812) 906-04-17'
-						],
-			value = $('#touchpoint-filter').val();
+			value = $('#touchpoint-filter').val(),
+			st1 = 'Озерки-Просвещение',
+			st2 = 'Сенная/Спасская/Садовая',
+			st3 = 'Лесная'
+			addressArr = {
+							st1: {
+									addr: 'ул. Композиторов 4.<br/> помещение 245',
+									phone:'+7 (812) 900-76-64'
+								},
+							st2: {
+									addr: 'ул.Гороховая 45 (во Дворе)',
+									phone: '+7 (812) 956-98-71'
+								},
+							st3: {
+									addr: 'Лесной проспект д.61к1',
+									phone: '+7 (812) 906-04-17'
+								}
+						};
+			
 
-		if (value == 'Озерки-Просвещение') {
-			$services_address_text.html('ул. Композиторов 4.<br/> помещение 245');
-			$services_address_phone.html('<a href="tel:' + phoneArr[0] + '">' + phoneArr[0] + '<a/>');
-		} else if (value == 'Сенная/Спасская/Садовая') {
-			$services_address_text.html('ул.Гороховая 45 (во Дворе)');
-			$services_address_phone.html('<a href="tel:' + phoneArr[1] + '">' + phoneArr[1] + '<a/>');
+		if (value == st1) {
+			$services_address_text.html(addressArr.st1.addr);
+			$services_address_phone.html('<a href="tel:' + addressArr.st1.phone + '">' + addressArr.st1.phone + '<a/>');
+		} else if (value == st2) {
+			$services_address_text.html(addressArr.st2.addr);
+			$services_address_phone.html('<a href="tel:' + addressArr.st2.phone + '">' + addressArr.st2.phone + '<a/>');
 		} else if (value == 'Лесная') {
-			$services_address_text.html('Лесной проспект д.61к1');
-			$services_address_phone.html('<a href="tel:' + phoneArr[2] + '">' + phoneArr[2] + '<a/>');
+			$services_address_text.html(addressArr.st3.addr);
+			$services_address_phone.html('<a href="tel:' + addressArr.st3.phone + '">' + addressArr.st3.phone + '<a/>');
 		}
 
 		$('#touchpoint-filter').on('hidden.bs.select', function (e) {
 			var value = $('#touchpoint-filter').val();
-			if (value == 'Озерки-Просвещение') {
-				$services_address_text.html('ул. Композиторов 4.<br/> помещение 245');
-				$services_address_phone.html('<a href="tel:' + phoneArr[0] + '">' + phoneArr[0] + '<a/>');
-			} else if (value == 'Сенная/Спасская/Садовая') {
-				$services_address_text.html('ул.Гороховая 45 (во Дворе)');
-				$services_address_phone.html('<a href="tel:' + phoneArr[1] + '">' + phoneArr[1] + '<a/>');
+			if (value == st1) {
+				$services_address_text.html(addressArr.st1.addr);
+				$services_address_phone.html('<a href="tel:' + addressArr.st1.phone + '">' + addressArr.st1.phone + '<a/>');
+			} else if (value == st2) {
+				$services_address_text.html(addressArr.st2.addr);
+				$services_address_phone.html('<a href="tel:' + addressArr.st2.phone + '">' + addressArr.st2.phone + '<a/>');
 			} else if (value == 'Лесная') {
-				$services_address_text.html('Лесной проспект д.61к1');
-				$services_address_phone.html('<a href="tel:' + phoneArr[2] + '">' + phoneArr[2] + '<a/>');
+				$services_address_text.html(addressArr.st3.addr);
+				$services_address_phone.html('<a href="tel:' + addressArr.st3.phone + '">' + addressArr.st3.phone + '<a/>');
 			}
 		});
 	})();
