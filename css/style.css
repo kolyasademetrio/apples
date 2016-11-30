@@ -1094,11 +1094,134 @@ select {
 	}
 
 }
-
-
-
-
 /* ------------------------>>> intro End <<<------------------------------------------------- */
+
+
+/* ------------------------>>> requestMain <<<----------------------------------------------------- */
+.requestMain__container {
+	max-width: 1028px;
+}
+
+.requestMain {
+	padding: 40px 0;
+	border-bottom: 4px solid #c5c5c5;
+	background: url("../img/bg-pattern--black.png") repeat center;
+}
+
+.requestMain__text {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr", Helvetica, Arial, sans-serif;
+  line-height: 50px;
+}
+
+.requestMain__textInner {
+	margin-left: 75px;
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 19px;				
+}
+
+.requestMain__text-light {
+  font-weight: 300;
+}
+
+.requestMain__text-medium {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.requestMain .icon-phone-repair {
+  display: block;
+  width: 30px;
+  height: 38px;
+  fill: #b7b7b7;
+  float: left;
+}
+
+.requestMain .icon-three-arrows {
+  width: 34px;
+  height: 38px;
+  fill: #9d9d9d;
+}
+
+.requestMain__btn {
+	display: inline-block;
+	width: 181px;
+	height: 31px;
+	line-height: 31px;
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	background: #fffc00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border-bottom: 3px solid #ffcc00;
+
+	-webkit-transition: all .6s ease 0s;
+	-moz-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+	transition: all .6s ease 0s;
+	margin-top: 2px;
+}
+
+.requestMain__btn:hover,
+.requestMain__btn:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+.requestMain__btn:hover {
+	background: #ffcc00;
+}
+
+@media ( max-width: 768px ) {
+
+	.requestMain {
+		padding: 30px 0;
+	}
+
+	.icon.icon-three-arrows {
+		display: none;
+	}
+
+	.requestMain__text {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+
+	.requestMain__container .row>div:last-child {
+		text-align: center;
+	}
+
+	.requestMain__textInner {
+		margin-left: 40px;
+	}
+
+}
+
+@media ( max-width: 360px ) {
+
+	.requestMain__textInner {
+		font-size: 13px;
+	}
+
+}
+
+
+/* ------------------------>>> requestMain End <<<------------------------------------------------- */
 
 
 
