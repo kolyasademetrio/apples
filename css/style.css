@@ -1153,8 +1153,8 @@ select {
 .requestMain__btn {
 	display: inline-block;
 	width: 181px;
-	height: 31px;
-	line-height: 31px;
+	height: 40px;
+	line-height: 40px;
 	font-family: "RobotoRegular";
 	font-style: normal;
 	font-weight: normal;
@@ -1172,7 +1172,6 @@ select {
 	-moz-transition: all .6s ease 0s;
 	-o-transition: all .6s ease 0s;
 	transition: all .6s ease 0s;
-	margin-top: 2px;
 }
 
 .requestMain__btn:hover,
