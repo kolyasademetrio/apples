@@ -1,9 +1,14 @@
-// $(window).load(function() {
-//     $('.flexslider').flexslider({
-//         animation: "slide",
-//         controlNav: false
-//     });
-// });
+$(window).load(function() {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: true,
+        directionNav: true,
+        slideshow: false,
+        prevText: "",
+        nextText: "",
+        customDirectionNav: $(".sliderMain__container-direction a")
+    });
+});
 
 $(document).ready(function() {
 	$('.headerNav__orderButton').magnificPopup({

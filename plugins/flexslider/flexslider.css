@@ -178,15 +178,20 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
     text-decoration: none;
     display: block;
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0;
+    width: 70px;
+    height: 70px;
+    // margin: -20px 0 0;
     position: absolute;
     top: 50%;
     z-index: 10;
     overflow: hidden;
     opacity: 0;
     cursor: pointer;
+
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
     
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 
@@ -204,28 +209,70 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav .flex-prev {
-    left: -75px;
-    margin-top: -25px;
+    left: 14px;
     opacity: 1;
-    background: #369;
-    width: 50px;
-    height: 50px;
+    background: none;
+    width: 70px;
+    height: 70px;
     line-height: 50px;
     text-align: center;
     color: #fff;
+    border: 3px solid #fff;
 }
 
 .flex-direction-nav .flex-next {
-    right: -75px;
-    margin-top: -25px;
+    right: 14px;
     text-align: right;
     opacity: 1;
-    background: #369;
-    width: 50px;
-    height: 50px;
+    background: none;
+    width: 70px;
+    height: 70px;
     line-height: 50px;
     text-align: center;
     color: #fff;
+    border: 3px solid #fff;
+}
+
+.flex-direction-nav a.flex-prev::before {
+    content: "";
+    border-color: transparent #b9b9b9 transparent transparent;
+    border-style: solid;
+    border-width: 11px 18px 11px 0;
+    height: 0;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -11px;
+    top: 50%;
+    transition: border-color 0.25s ease 0s;
+    width: 0;
+    position: absolute;
+}
+
+.flex-direction-nav a.flex-next::before {
+    content: "";
+    border-color: transparent transparent transparent #b9b9b9;
+    border-width: 11px 0 11px 18px;
+    margin-left: -6px;
+    border-style: solid;
+    height: 0;
+    left: 50%;
+    margin-top: -11px;
+    top: 50%;
+    transition: border-color 0.25s ease 0s;
+    width: 0;
+    position: absolute;
+}
+
+.sliderMain__container-direction {
+  height: 80px;
+  top: 100px;
+}
+
+.direction__wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -40px;
 }
 
 
@@ -234,7 +281,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -40px;
+  bottom: 18px;
   text-align: center;
 }
 .flex-control-nav li {
@@ -244,30 +291,32 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 14px;
+  height: 14px;
   display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
+  background: #000;
+  border: 2px solid #fff;
   cursor: pointer;
   text-indent: -9999px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
 }
 .flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
+  background: #fff;
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background: #fff;
   cursor: default;
+}
 
+.sliderMain *:focus {
+  outline: 0 none !important;
+}
 
 
 /* flex-pauseplay ПАУЗА-ПЛЭЙ*/

@@ -714,5 +714,88 @@ select {
 /* ------------------------>>> headerNav End <<<---------------------------------------------- */
 
 
+/* ------------------------>>> sliderMain <<<----------------------------------------------------- */
+.sliderMain__container {
+	max-width: 1028px;
+}
+
+.sliderMain {
+	background: #000 url(../img/bg/bg-slider-main/bg-slider.png) center 0 no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+
+.flexslider {
+	background: none;
+	position: relative;
+}
+
+.sliderMain__item {
+	height: 300px;
+}
+
+.sliderMain__innerItem {
+	padding: 30px 0 0 115px;
+}
+
+.sliderMain__title {
+	font-size: 35px;
+	color: #fff;
+
+	margin: 0 0 35px;
+}
+
+.sliderMain__text,
+.sliderMain__text li {
+	font-size: 25px;
+	color: #fff;
+}
+
+.sliderMain__text span.small {
+	font-size: 80%;
+}
+
+.sliderMain__text span.textThrough {
+	text-decoration: line-through;
+}
+
+.sliderMain__item.bg1 {
+	background: url(../img/bg/bg-slider-main/1.png) no-repeat;
+	background-position-x: 78%;
+	background-position-y: 80px;
+	background-size: 40% auto;
+}
+
+.sliderMain__item.bg2 {
+	background: url(../img/bg/bg-slider-main/2.png) no-repeat;
+	background-position-x: 78%;
+	background-position-y: 100%;
+	background-size: 30% auto;
+}
+
+.sliderMain__item.bg3 {
+	background: url(../img/bg/bg-slider-main/3.png) no-repeat;
+	background-position-x: 78%;
+	background-position-y: 100%;
+	background-size: 50% auto;
+}
+
+.sliderMain__item.bg4 {
+	background: url(../img/bg/bg-slider-main/4.png) no-repeat;
+	background-position-x: 78%;
+	background-position-y: 100%;
+	background-size: 65% auto;
+}
+
+.sliderMain__item.bg5 {
+	background: url(../img/bg/bg-slider-main/5.png) no-repeat;
+	background-position-x: 81%;
+	background-position-y: 121%;
+	background-size: 35% auto;
+}
+
+/* ------------------------>>> sliderMain End <<<------------------------------------------------- */
+
+
 
 
