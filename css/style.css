@@ -1218,9 +1218,146 @@ select {
 	}
 
 }
-
-
 /* ------------------------>>> requestMain End <<<------------------------------------------------- */
+
+
+/* ------------------------>>> sliderReviews <<<----------------------------------------------------- */
+.sliderReviews__container {
+	max-width: 1028px;
+}
+
+.sliderReviews {
+	padding: 40px 0 60px;
+}
+
+.sliderReviews__title {
+	text-align: center;
+	margin: 0 0 34px;
+	text-transform: uppercase;
+}
+
+.sliderReviews__content {
+	padding: 0 20px;
+	height: 217px;
+}
+
+.sliderReviews__content:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.sliderReviews__imgWrap {
+	width: 274px;
+	text-align: center;
+	float: left;
+}
+
+.sliderReviews__img {
+	display: inline-block;
+	width: 166px;
+	height: 166px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.36);
+	-moz-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.36);
+	-o-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.36);
+	box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.36);
+
+	margin: 0 0 27px;
+}
+
+.sliderReviews__username {
+	text-align: center;
+	font-family: "RobotoMedium";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+}
+
+.sliderReviews__comment {
+	margin-left: 274px;
+	margin-right: 55px;
+	padding: 50px 40px;
+	background: #f9f9f5;
+	height: 100%;
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	color: #282828;
+}
+
+@media ( max-width: 992px ) {
+
+	.sliderReviews__imgWrap {
+		width: 200px;
+	}
+
+	.sliderReviews__img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.sliderReviews__comment {
+		margin-left: 205px;
+		margin-right: 20px;
+		padding: 30px;
+	}
+
+}
+
+@media ( max-width: 768px ) {
+
+	.sliderReviews__imgWrap {
+		float: none;
+		left: 15px;
+		right: 15px;
+		width: auto;
+		position: absolute;
+		top: 10px;
+	}
+
+	.sliderReviews__img {
+		display: none;
+	}
+
+	.sliderReviews__comment {
+		margin: 0 20px;
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	.sliderReviews__content {
+		position: relative;
+	}
+
+}
+
+@media ( max-width: 479px ) {
+
+	.sliderReviews__comment {
+		margin: 0;
+		padding: 35px 10px 10px;
+		font-size: 14px;
+	}
+
+	.sliderReviews__title {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+
+	.sliderReviews {
+		padding: 30px 0;
+	}
+
+}
+
+
+/* ------------------------>>> sliderReviews End <<<------------------------------------------------- */
 
 
 

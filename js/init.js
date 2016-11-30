@@ -8,6 +8,15 @@ $(window).load(function() {
         nextText: "",
         customDirectionNav: $(".sliderMain__container-direction a")
     });
+
+    $('.sliderReviews__flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: true,
+        slideshow: false,
+        prevText: "",
+        nextText: ""
+    });
 });
 
 $(document).ready(function() {

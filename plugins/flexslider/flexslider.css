@@ -175,12 +175,11 @@ html[xmlns] .flexslider .slides {
 
 /* ------------------------>>> CUSTOM style <<<----------------------------------------------------- */
 /* flex-direction-nav ПРАВО-ЛЕВО */
-.flex-direction-nav a {
+.sliderMain .flex-direction-nav a {
     text-decoration: none;
     display: block;
     width: 70px;
     height: 70px;
-    // margin: -20px 0 0;
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -208,7 +207,25 @@ html[xmlns] .flexslider .slides {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.flex-direction-nav .flex-prev {
+.sliderReviews .flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 17px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.sliderMain .flex-direction-nav .flex-prev {
     left: 14px;
     opacity: 1;
     background: none;
@@ -220,7 +237,15 @@ html[xmlns] .flexslider .slides {
     border: 3px solid #fff;
 }
 
-.flex-direction-nav .flex-next {
+.sliderReviews .flex-direction-nav .flex-prev {
+    left: 14px;
+    opacity: 1;
+    width: 17px;
+    height: 60px;
+    background: url(../../img/prev_sliderReviews.png) no-repeat left top;
+}
+
+.sliderMain .flex-direction-nav .flex-next {
     right: 14px;
     text-align: right;
     opacity: 1;
@@ -233,7 +258,15 @@ html[xmlns] .flexslider .slides {
     border: 3px solid #fff;
 }
 
-.flex-direction-nav a.flex-prev::before {
+.sliderReviews .flex-direction-nav .flex-next {
+    right: 14px;
+    opacity: 1;
+    width: 17px;
+    height: 60px;
+    background: url(../../img/next_sliderReviews.png) no-repeat left top;
+}
+
+.sliderMain .flex-direction-nav a.flex-prev::before {
     content: "";
     border-color: transparent #b9b9b9 transparent transparent;
     border-style: solid;
@@ -248,7 +281,7 @@ html[xmlns] .flexslider .slides {
     position: absolute;
 }
 
-.flex-direction-nav a.flex-next::before {
+.sliderMain .flex-direction-nav a.flex-next::before {
     content: "";
     border-color: transparent transparent transparent #b9b9b9;
     border-width: 11px 0 11px 18px;
