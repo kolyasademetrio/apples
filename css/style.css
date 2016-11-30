@@ -1041,8 +1041,46 @@ select {
 	}
 
 }
-
 /* ------------------------>>> repairMain End <<<------------------------------------------------- */
+
+
+/* ------------------------>>> intro <<<----------------------------------------------------- */
+.intro__container {
+	max-width: 1028px;
+}
+
+.intro {
+	padding: 53px 0 40px;
+	background: #dddddd;
+}
+
+.intro__title {
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #242424;
+
+	margin: 0 0 47px;
+}
+
+.intro__content p {
+	font-family: "RobotoLight";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #242424;
+
+	margin: 0 0 20px;
+}
+
+
+
+
+/* ------------------------>>> intro End <<<------------------------------------------------- */
 
 
 
