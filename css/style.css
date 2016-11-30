@@ -655,6 +655,7 @@ select {
 		right: -220px;
 		bottom: 0;
 		background: rgba(0, 0, 0, .9);
+		z-index: 999;
 
 		-webkit-transition: all .6s ease 0s;
 		-moz-transition: all .6s ease 0s;
@@ -669,10 +670,6 @@ select {
 
 	.headerNav__btnWrap {
 		padding-bottom: 10px;
-	}
-
-	.headerNav__list {
-		// background: #000;
 	}
 
 	.headerNav__list > li {
@@ -803,8 +800,249 @@ select {
 	}
 
 }
-
 /* ------------------------>>> sliderMain End <<<------------------------------------------------- */
+
+
+/* ------------------------>>> repairMain <<<----------------------------------------------------- */
+.repairMain__container {
+	max-width: 1028px;
+}
+
+.repairMain {
+	padding: 25px 0 20px;
+}
+
+.repairMain__title {
+	padding: 0 0 25px;
+	border-bottom: 2px solid #dfdfdf;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 20px;
+
+	margin: 0 0 25px;
+}
+
+.repairMain__text {
+	margin: 0 0 25px;
+}
+
+.repairMain__item {
+	float: left;
+	width: 187px;
+
+	margin-bottom: 43px;
+}
+
+.repairMain__item:not(:last-child) {
+	margin-right: 15px;
+}
+
+.repairMain__itemLink {
+    background: #e7e7e7 url("../img/bg-pattern--white.png") repeat 0 0;
+    border: 1px solid #cecece;
+
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.06);
+
+    color: #000 !important;
+    display: block;
+    font-size: 22px;
+    font-weight: 300;
+    height: 184px;
+    line-height: 29px;
+    margin: 0 auto;
+    padding-top: 18px;
+    position: relative;
+    text-align: center;
+
+    -webkit-transition: border-color 0.2s ease 0s;
+    -moz-transition: border-color 0.2s ease 0s;
+    -o-transition: border-color 0.2s ease 0s;
+    transition: border-color 0.2s ease 0s;
+
+    width: 184px;
+}
+
+.repairMain__itemLink:hover {
+	border-color: #7c7c7c;
+	text-decoration: none;
+}
+
+.repairMain__item .icon {
+    display: block;
+    fill: #7c7c7c;
+    height: 122px;
+    margin: 0 auto 10px;
+
+    -webkit-transition: fill 0.2s ease 0s;
+    -moz-transition: fill 0.2s ease 0s;
+    -o-transition: fill 0.2s ease 0s;
+    transition: fill 0.2s ease 0s;
+
+    width: 144px;
+}
+
+.repairMain__itemLink:hover .icon {
+	fill: #000;
+}
+
+.repairMain__item .icon-arrow-tl {
+    bottom: 1px;
+    fill: rgba(0, 0, 0, 0.29);
+    height: 14px;
+    left: 1px;
+    margin-bottom: 0;
+    position: absolute;
+    width: 14px;
+}
+
+@media ( max-width: 1200px ) {
+
+	.repairMain__item {
+		width: 176px;
+	}
+
+	.repairMain__itemLink {
+		width: 176px;
+	}
+
+	.repairMain__item .icon:not(.icon-arrow-tl) {
+		width: 140px;
+	}
+
+}
+
+@media ( max-width: 992px ) {
+
+	.repairMain__item {
+		width: 131px;
+		height: 131px;
+	}
+
+	.repairMain__itemLink {
+		width: 131px;
+		height: 131px;
+		font-size: 17px;
+	}
+
+	.repairMain__item .icon:not(.icon-arrow-tl) {
+		width: 100px;
+		height: 65px;
+	}
+
+	.repairMain__item .icon-arrow-tl {
+		height: 11px;
+		width: 11px;
+	}
+
+}
+
+@media ( max-width: 768px ) {
+
+	.repairMain__item {
+		width: 32%;
+		height: auto;
+	}
+
+	.repairMain__item {
+		margin-right: 2% !important;
+		margin-bottom: 2%;
+	}
+
+	.repairMain__item:nth-child(3) {
+		margin-right: 0 !important;
+	}
+
+	.repairMain__itemLink {
+		width: 100%;
+		height: auto !important;
+		font-size: 17px;
+	}
+
+	.repairMain__item .icon:not(.icon-arrow-tl) {
+		width: 75%;
+		height: 100px !important;
+	}
+
+	.repairMain__item .icon-arrow-tl {
+		height: 11px;
+		width: 11px;
+	}
+
+}
+
+@media ( max-width: 479px ) {
+
+	.repairMain__item {
+		width: 49%;
+		height: auto;
+	}
+
+	.repairMain__container .repairMain__item {
+		margin-right: 2% !important;
+	}
+
+	.repairMain__item:nth-child(even) {
+		margin-right: 0 !important;
+	}
+
+	.repairMain__itemLink {
+		width: 100%;
+		height: auto !important;
+		font-size: 15px;
+	}
+
+	.repairMain__item .icon:not(.icon-arrow-tl) {
+		width: 75%;
+		height: 100px !important;
+	}
+
+	.repairMain__item .icon-arrow-tl {
+		height: 9px;
+		width: 9px;
+	}
+
+}
+
+@media ( max-width: 379px ) {
+
+	.repairMain__item {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.repairMain__container .repairMain__item {
+		margin-right: 0 !important;
+	}
+
+	.repairMain__item:nth-child(even) {
+		margin-right: 0 !important;
+	}
+
+	.repairMain__itemLink {
+		width: 230px !important;
+		height: 230px !important;
+		font-size: 18px;
+	}
+
+	.repairMain__item .icon:not(.icon-arrow-tl) {
+		width: 145px;
+		height: 145px !important;
+	}
+
+	.repairMain__item .icon-arrow-tl {
+		height: 9px;
+		width: 9px;
+	}
+
+}
+
+/* ------------------------>>> repairMain End <<<------------------------------------------------- */
 
 
 
