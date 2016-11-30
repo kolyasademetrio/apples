@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
 .headerTop__link {
 	display: block;
 	float: left;
-	margin: 7px 0 0;
+	margin:18px 0 0;
 }
 
 .headerTop__img {
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p {
 	float: left;
 	width: 235px;
 	margin: 0 0 0 43px;
-	padding: 29px 0 0;
+	padding: 42px 0 0;
 }
 
 .headerTop__address {
@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6, p {
 	border: 1px solid #dadada;
 	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.19);
 	margin-top: 14px;
+	min-height: 93px;
 }
 
 .services__address-footer:after {
@@ -725,9 +726,10 @@ select {
 	height: 300px;
 }
 
-.flexslider {
+.sliderMain__flexslider {
 	background: none;
 	position: relative;
+	height: 300px;
 }
 
 .sliderMain__item {
@@ -792,6 +794,14 @@ select {
 	background-position-x: 81%;
 	background-position-y: 121%;
 	background-size: 35% auto;
+}
+
+@media ( max-width: 992px ) {
+
+	.sliderMain {
+		display: none;
+	}
+
 }
 
 /* ------------------------>>> sliderMain End <<<------------------------------------------------- */
