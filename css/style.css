@@ -78,6 +78,22 @@ h1, h2, h3, h4, h5, h6, p {
 	min-height: 93px;
 }
 
+.headerTop__address:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.headerTop__logoWrap {
+	float: left;
+}
+
+.headerTop__logoWrap:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 .services__address-footer:after {
 	display: table;
 	content: "";
@@ -133,12 +149,24 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 181px;
 }
 
+.headerTop__addressWrapper:after {
+	display: table;
+	content: "";
+	clear: both;
+}
 
-/* ----- selectpicker ----------*/
 .headerTop__address-select {
 	float: right;
 }
 
+.services__address-title {
+	float: right;
+	font-size: 13px;
+    padding: 5px 6px 6px 12px;
+    text-align: right;
+}
+
+/* ----- selectpicker ----------*/
 select {
   padding: 10px;
   margin: 0 0 20px 0;
@@ -337,19 +365,13 @@ select {
 }
 /* -- selectpicker End -- */
 
-.services__address-title {
-	float: right;
-	font-size: 13px;
-    padding: 5px 6px 6px 12px;
-    text-align: right;
-}
-
 @media ( max-width: 992px ) {
 
 	.headerTop__logoWrap {
 		display: table;
 		margin-left: auto;
 		margin-right: auto;
+		float: none;
 	}
 
 	.headerTop__address {
@@ -393,7 +415,7 @@ select {
 
 }
 
-@media ( max-width: 500px ) {
+@media ( max-width: 520px ) {
 
 	.headerTop__addressWrapper {
 		position: relative;
@@ -424,10 +446,14 @@ select {
 
 }
 
-@media ( max-width: 350px ) {
+@media ( max-width: 380px ) {
 
 	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-		width: 260px;
+		width: 95%;
+	}
+
+	.services__address-title {
+		font-size: 12px;
 	}
 
 }
