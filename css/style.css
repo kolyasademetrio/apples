@@ -1355,9 +1355,184 @@ select {
 	}
 
 }
-
-
 /* ------------------------>>> sliderReviews End <<<------------------------------------------------- */
+
+
+/* ------------------------>>> addressMap <<<----------------------------------------------------- */
+.addressMap__container {
+	max-width: 1028px;
+	position: relative;
+}
+
+.addressMap__container:after {
+	content: "";
+	width: 96px;
+	height: 47px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../img/address_triangle.png) no-repeat center top;
+	background-size: cover;
+	z-index: 1;
+}
+
+.addressMap__row {
+	margin-right: -25px;
+	margin-left: -25px;
+}
+
+.addressMap__innerItem,
+.addressMap__container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.addressMap {
+	background: #000 url(../img/bg/bg_address.jpg) center 0 no-repeat;
+	background-size: cover;
+	padding: 50px 0 0;
+}
+
+.addressMap__title {
+	padding: 0 15px;
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+	margin: 0 0 45px;
+}
+
+.addressMap__innerItem {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.addressMap__address {
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: #fff;
+	min-height: 46px;
+
+	margin: 0 0 10px;
+}
+
+.addressMap__btn {
+	width: 230px;
+	height: 44px;
+	line-height: 44px;
+	display: inline-block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	border: 0 none;
+	border-bottom: 4px solid #ffcc00;
+	background: #fffc00;
+	font-family: "RobotoRegular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: #2e2e2e;
+
+	margin: 0 0 25px;
+}
+
+.addressMap__phonenumber {
+	display: block;
+	color: #fff;
+	font-family: "RobotoMedium";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+@media ( max-width: 1200px ) {
+
+	.addressMap__row {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+
+	.addressMap__innerItem,
+	.addressMap__container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+}
+
+@media ( max-width: 992px ) {
+
+	.addressMap__address {
+		font-size: 14px;
+	}
+
+	.addressMap__btn {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.addressMap__phonenumber {
+		font-size: 16px;
+	}
+
+}
+
+@media ( max-width: 768px ) {
+
+	.addressMap__innerItem {
+		width: 50%;
+	}
+
+	.addressMap__innerItem:nth-child(3) {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media ( max-width: 479px ) {
+
+	.addressMap__innerItem {
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.addressMap__addressWrap {
+		padding: 10px;
+		border: 1px solid #fff;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-o-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.addressMap__btn {
+		width: 260px;
+	}
+
+	.addressMap__container:after {
+		width: 76px;
+		height: 37px;
+		margin-left: -38px;
+	}
+
+}
+
+
+/* ------------------------>>> addressMap End <<<------------------------------------------------- */
 
 
 
