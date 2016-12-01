@@ -1454,6 +1454,12 @@ select {
 	font-size: 18px;
 }
 
+.addressMap__phonenumber:focus,
+.addressMap__phonenumber:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
 @media ( max-width: 1200px ) {
 
 	.addressMap__row {
