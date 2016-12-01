@@ -1488,6 +1488,11 @@ select {
 
 @media ( max-width: 768px ) {
 
+	.addressMap__title {
+		font-size: 20px;
+	}
+
+
 	.addressMap__innerItem {
 		width: 50%;
 	}
@@ -1527,6 +1532,23 @@ select {
 		width: 76px;
 		height: 37px;
 		margin-left: -38px;
+	}
+
+	.addressMap__title {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.addressMap {
+		padding-top: 30px;
+	}
+
+}
+
+@media ( max-width: 360px ) {
+
+	.addressMap__btn {
+		width: 100%;
 	}
 
 }
